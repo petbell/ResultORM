@@ -1,0 +1,70 @@
+
+{% extends "results_app/base.html" %}
+{% block title %} Result Checking Page {% endblock title %} 
+
+
+{% block content %}
+
+<div class="wrapper">
+    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+    <div class="form-box register">
+        <h2> CHeck your result </h2>
+    <form action="#" method='POST'>
+        {% csrf_token %}    
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+            <input type="text" required name="studentid">
+            <label for="{{form.studentid_for_label}}">| Student Number</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="apps"></ion-icon></ion-icon></span>
+            <input type="password" required name="cardpin">
+            <label for="{{form.cardpin_for_label}}">| Card PIN</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="keypad"></ion-icon></span>
+            <input type="text" required name= "serial">
+            <label for="{{form.serial_for_label}}">| Card Serial Number</label>
+        </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">I agree to the terms and conditions</label>
+                
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+               
+                <p>Already have an account?
+                    <a href="#" class="login-link">Login Here</a>
+                </p>
+                
+            </div>
+            
+
+
+        
+    </form>
+</div>
+</div>
+
+
+
+<!--<form method="POST" action="">
+    {% csrf_token %}
+
+    
+    {{form_key.as_p}}
+
+    <P><input class="btnlogin-popup" type="submit" value="Enter">
+    </p> -->
+    <!-- <label for="Student Number">Student Number</label>
+    <input type="text" name="txtstudentid">
+    <label for="Card PIN">Card PIN</label>
+    <input type="text" name="txtpin" id="">
+    <label for="Card Serial Number">Card Serial Number</label>
+    <input type="text" name="txtserial" id="">
+    <button type="submit">Get Result</button> -->
+    
+        </form>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+{% endblock content %}

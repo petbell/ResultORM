@@ -1,0 +1,25 @@
+{% extends "results_app/base.html" %}
+
+{% block title %}
+Resultset
+{% endblock title %}
+
+{% block content %}
+ <ul>
+                {% for row in data %}
+            <li>{{row}}
+            </li>
+            {% endfor %}
+        </ul>
+
+
+{% endblock content %}
+ <ul>
+                {% for row in data %}
+            <li>{{row}}
+            </li>
+            {% endfor %}
+        </ul>
+
+
+

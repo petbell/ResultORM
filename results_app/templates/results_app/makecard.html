@@ -1,0 +1,18 @@
+
+{% extends "results_app/base.html" %}
+{% block title %} Card Creation Page {% endblock title %} 
+
+
+{% block content %}
+<p> Add New Cards </p>
+<div class="wrapper">
+    <form method="POST" action="{% url 'results_app:make_card' %}">
+        {% csrf_token %}
+        <div class= 'input-box'>{{form_key.as_p}}</div>
+        
+        <button type="submit" class='btn'>Create Cards</button>
+        </form>
+        </div>
+        
+
+{% endblock content %}

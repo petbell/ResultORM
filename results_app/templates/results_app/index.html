@@ -1,0 +1,29 @@
+{% extends "results_app/base.html" %} 
+<!-- {% load static %} -->
+
+{% block title %}
+{{title}}
+{% endblock title %}
+
+{% block content %}
+<h2>{{heading}}</h2>
+<p>{{description}}</p>
+<p><h5>{{datas}}</h5></p>
+ <ul>
+                {% for row in data %}
+            <li>{{row}}
+            </li>
+            {% endfor %}
+        </ul>
+
+
+{% endblock content %}
+ <ul>
+                {% for row in data %}
+            <li>{{row}}
+            </li>
+            {% endfor %}
+        </ul>
+
+
+

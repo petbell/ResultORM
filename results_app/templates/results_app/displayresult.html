@@ -1,0 +1,88 @@
+
+{% extends "results_app/base.html" %}
+{% block title %} Result Checking Page {% endblock title %} 
+
+
+{% block content %}
+
+<h4>Card use {{use_key}} of 5 </h4>
+<div class="wrapper">
+<h2> This is your result </h2>
+<h4> {{use_key}} </h4>
+<table>
+    <thead>
+        <tr>
+        <th colspan=2>Field Values</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Student Registration Number</td>
+            <td>{{form_key.student_id}}</td>    
+        </tr>
+
+        <tr>
+            <td>Student Name</td>
+            <td>{{form_key.student_name}}</td>    
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>{{form_key.Maths}}</td>    
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>{{form_key.English}}</td>    
+        </tr>
+        <tr>
+            <td>Economics</td>
+            <td>{{form_key.Economics}}</td>    
+        </tr>
+        <tr>
+            <td>Biology</td>
+            <td>&#8358 {{form_key.Biology}} </td>    
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+        <th colspan= 2>Computed Values</th>
+    </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>Total</td>
+            <td>&#x20a6 {{form_key.Total}}</td>    
+        </tr>
+        <tr>
+            <td>Average Score</td>
+            <td>{{form_key.Avscore}}</td>    
+        </tr>
+        
+        <tr>
+            <td>Grade</td>
+            <td>{{form_key.Grade}}</td>    
+        </tr>
+    </tbody>
+</table>
+
+    
+
+   
+    
+
+    <!-- <p>
+    
+    {{form_key}}
+</p> 
+ {% lorem 1 b random %}
+         <label for="Student Number">Student Number</label>
+    <input type="text" name="txtstudentid">
+    <label for="Card PIN">Card PIN</label>
+    <input type="text" name="txtpin" id="">
+    <label for="Card Serial Number">Card Serial Number</label>
+    <input type="text" name="txtserial" id="">
+    <button type="submit">Get Result</button> -->
+    
+        
+    </div>
+{% endblock content %}
