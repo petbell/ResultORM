@@ -1,0 +1,37 @@
+
+{% block title %} Registration Form {% endblock title %} 
+
+
+{% block content %}
+<div class="wrapper">
+
+<div class="form-box register">
+    <h2>Registration form</h2>
+    <form action="#" method="POST">
+        {% csrf_token %}
+        <div class="input-box">
+            {{form_key.as_p}}
+        </div>
+            <button type="submit" class="btn">Register</button>
+            <input type="hidden" name="next" value="{% url 'results_app:index' %}">
+            <div class="login-register">
+               
+                <p>Already have an account?
+                    <a href="{% url 'users_app:login' %}" class="login-link">Login Here</a>
+                </p>
+                
+            </div>
+            
+
+
+        
+    </form>
+</div>
+<!--- <form method="POST" action="">
+    {% csrf_token %}
+
+    {{form_key.as_p}}
+    <input class="btnlogin-popup" type="submit" value="Enter">
+        </form> -->
+    </div>
+{% endblock content %}

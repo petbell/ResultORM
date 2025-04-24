@@ -1,0 +1,9 @@
+Card with PIN: 446287918458 and Serial: 665909 created.
+Card with PIN: 237264225445 and Serial: 647322 created.
+Card with PIN: 895609277107 and Serial: 531697 created.
+Card with PIN: ['799620442059'] and Serial: 941030 created.
+Card with PIN: ['628832960753'] and Serial: 801815 created.
+Card with PIN: 4622-6148-2379 and Serial: 666 409 created.
+Card with PIN: 4153-5884-7128 and Serial: 798 106 created.
+Card with PIN: 4349-5554-7134 and Serial: 406 482 created.
+Card with PIN: 6238-2129-2362 and Serial: 281 878 created.

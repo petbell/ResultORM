@@ -1,0 +1,54 @@
+{% extends "results_app/base.html" %}
+{% block title %} Registration Form {% endblock title %} 
+{%load static %}
+
+{% block content %}
+<div class="wrapper">
+    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+    <div class="form-box login">
+        <h2>Login form</h2>
+<form action="#" method = 'POST'>
+    {% csrf_token %}
+    <div class="input-box">
+        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+        <input type="text" required name="username">
+        <label for="{{form.username_for_label}}">| Username</label>
+    </div>
+    <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" required name="password">
+        <label for="{{form.password_for_label}}">| Password</label>
+    </div>
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#" class="forgot-password">Forgot Password</a>
+        </div>
+        <button type="submit" class="btn" value="Enter">Login</button>
+        <div class="login-register">
+           
+            <p>Don't have an account?
+                <a href="#" class="register-link">Register Here</a>
+            </p>
+            
+        </div>
+        
+
+
+    
+</form>
+</div>
+
+
+</div>
+<!--{%block script %}
+<script type="text/javascript" src="{% static 'results/logscript.js' %}"></script>
+{% endblock %}
+
+<form class='form-box login' method="POST" action="">
+    {% csrf_token %}
+
+    {{form_key.as_div}}
+    <input class="btnlogin-popup" type="submit" value="Enter">
+        </form>
+
+{% endblock content %} -->
