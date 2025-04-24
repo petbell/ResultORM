@@ -10,11 +10,11 @@
  - Includes card creation feature for admins.
  - Since its ORM model, it can be used with any database system.
 
- ### :spark: Future Additions 
+ ### ⚒️  Future Additions ✳️
  - Print scratch cards
  - Save results to PDF
 
- ## :spanner: :hammer:  Tech Stack
+ ## 🛠️: Tech Stack
  - Python
  - Django
  - Jinja 2
